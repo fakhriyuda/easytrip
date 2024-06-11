@@ -1,4 +1,4 @@
-import 'package:easytrip/view/onboarding/onboarding_page.dart';
+import 'package:easytrip/screens/onboarding/onboarding_page.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -36,7 +36,7 @@ class _SplashScreenState extends State<SplashScreen> {
             width: double.infinity,
             fit: BoxFit.fitWidth,
           ),
-          Positioned(
+          const Positioned(
             bottom: 32,
             child: Text(
               'V1.0.0',

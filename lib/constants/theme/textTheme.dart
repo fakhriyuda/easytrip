@@ -1,4 +1,7 @@
-import 'package:easytrip/theme/app_color.dart';
+// Usage: Define text theme for the app
+// ignore_for_file: file_names
+
+import 'package:easytrip/constants/color/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

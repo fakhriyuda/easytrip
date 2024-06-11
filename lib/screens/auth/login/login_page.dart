@@ -1,6 +1,6 @@
-import 'package:easytrip/theme/app_color.dart';
-import 'package:easytrip/view/auth/forgot/forgot_pass_page.dart';
-import 'package:easytrip/view/auth/register/register_page.dart';
+import 'package:easytrip/screens/auth/forgot/forgot_pass_page.dart';
+import 'package:easytrip/screens/auth/register/register_page.dart';
+import 'package:easytrip/constants/color/app_color.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
@@ -17,7 +17,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+        padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -45,10 +45,10 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 contentPadding:
-                    EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             TextFormField(
               obscureText: showPassword,
               obscuringCharacter: '•',
@@ -72,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
                       )),
                 ),
                 suffixIconConstraints:
-                    BoxConstraints(maxHeight: 40, maxWidth: 40),
+                    const BoxConstraints(maxHeight: 40, maxWidth: 40),
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15),
                     borderSide: BorderSide(color: AppColor.grey)),
@@ -86,10 +86,10 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 contentPadding:
-                    EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
               ),
             ),
-            Container(
+            SizedBox(
               height: 50,
               width: double.infinity,
               child: Row(
@@ -132,7 +132,7 @@ class _LoginPageState extends State<LoginPage> {
                 ],
               ),
             ),
-            SizedBox(height: 100),
+            const SizedBox(height: 100),
             OutlinedButton(
               onPressed: () {
                 Navigator.push(
@@ -140,16 +140,16 @@ class _LoginPageState extends State<LoginPage> {
                     MaterialPageRoute(
                         builder: (context) => const RegisterPage()));
               },
-              child: Text('Create Account'),
               style: OutlinedButton.styleFrom(
                 foregroundColor: Colors.black,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
-                minimumSize: Size(double.infinity, 50),
+                minimumSize: const Size(double.infinity, 50),
               ),
+              child: const Text('Create Account'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(
@@ -158,9 +158,9 @@ class _LoginPageState extends State<LoginPage> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
-                minimumSize: Size(double.infinity, 50),
+                minimumSize: const Size(double.infinity, 50),
               ),
-              child: Text('Login'),
+              child: const Text('Login'),
             ),
           ],
         ),

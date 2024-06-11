@@ -1,6 +1,6 @@
-import 'package:easytrip/theme/app_color.dart';
-import 'package:easytrip/theme/textTheme.dart';
-import 'package:easytrip/view/auth/forgot/new_pass_page.dart';
+import 'package:easytrip/screens/auth/forgot/new_pass_page.dart';
+import 'package:easytrip/constants/color/app_color.dart';
+import 'package:easytrip/constants/theme/textTheme.dart';
 import 'package:flutter/material.dart';
 
 class ForgotPassPage extends StatefulWidget {
@@ -19,18 +19,18 @@ class _ForgotPassPageState extends State<ForgotPassPage> {
         children: [
           Expanded(
             child: SingleChildScrollView(
-              padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Input Your Email',
                       style: myTheme.textTheme.titleMedium),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                   Text(
                     'Forgot Your Password?',
                     style: myTheme.textTheme.headlineSmall,
                   ),
-                  SizedBox(height: 56),
+                  const SizedBox(height: 56),
                   TextFormField(
                     decoration: InputDecoration(
                       labelText: 'Email',
@@ -48,7 +48,7 @@ class _ForgotPassPageState extends State<ForgotPassPage> {
                         ),
                       ),
                       contentPadding:
-                          EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                          const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                     ),
                   ),
                 ],
@@ -64,16 +64,16 @@ class _ForgotPassPageState extends State<ForgotPassPage> {
                   MaterialPageRoute(builder: (context) => const NewPassPage()),
                 );
               },
-              child: Text('Submit'),
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(double.infinity, 50),
+                minimumSize: const Size(double.infinity, 50),
                 foregroundColor: Colors.black,
                 backgroundColor: AppColor.yellow,
-                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
               ),
+              child: const Text('Submit'),
             ),
           )
         ],

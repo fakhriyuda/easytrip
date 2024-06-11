@@ -1,5 +1,5 @@
-import 'package:easytrip/theme/app_color.dart';
-import 'package:easytrip/theme/textTheme.dart';
+import 'package:easytrip/constants/color/app_color.dart';
+import 'package:easytrip/constants/theme/textTheme.dart';
 import 'package:flutter/material.dart';
 
 class NewPassPage extends StatefulWidget {
@@ -21,17 +21,17 @@ class _NewPassPageState extends State<NewPassPage> {
         children: [
           Expanded(
             child: SingleChildScrollView(
-              padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Forgot Password', style: myTheme.textTheme.titleMedium),
-                  SizedBox(height: 8),
+                  const SizedBox(height: 8),
                   Text(
                     'Create New Password',
                     style: myTheme.textTheme.headlineSmall,
                   ),
-                  SizedBox(height: 56),
+                  const SizedBox(height: 56),
                   TextFormField(
                     obscureText: showPassword,
                     obscuringCharacter: '•',
@@ -55,7 +55,7 @@ class _NewPassPageState extends State<NewPassPage> {
                             )),
                       ),
                       suffixIconConstraints:
-                          BoxConstraints(maxHeight: 40, maxWidth: 40),
+                          const BoxConstraints(maxHeight: 40, maxWidth: 40),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(15),
                           borderSide: BorderSide(color: AppColor.grey)),
@@ -69,10 +69,10 @@ class _NewPassPageState extends State<NewPassPage> {
                         ),
                       ),
                       contentPadding:
-                          EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                          const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                     ),
                   ),
-                  SizedBox(height: 24),
+                  const SizedBox(height: 24),
                   TextFormField(
                     obscureText: showNewPassword,
                     obscuringCharacter: '•',
@@ -94,7 +94,7 @@ class _NewPassPageState extends State<NewPassPage> {
                             )),
                       ),
                       suffixIconConstraints:
-                          BoxConstraints(maxHeight: 40, maxWidth: 40),
+                          const BoxConstraints(maxHeight: 40, maxWidth: 40),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(15),
                           borderSide: BorderSide(color: AppColor.grey)),
@@ -108,10 +108,10 @@ class _NewPassPageState extends State<NewPassPage> {
                         ),
                       ),
                       contentPadding:
-                          EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                          const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
                     ),
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Text("your password must include at least one symbol and be 8 or more characters long.",
                       style: myTheme.textTheme.labelMedium),
                 ],
@@ -122,16 +122,16 @@ class _NewPassPageState extends State<NewPassPage> {
             padding: const EdgeInsets.all(20.0),
             child: ElevatedButton(
               onPressed: () {},
-              child: Text('Save'),
               style: ElevatedButton.styleFrom(
-                minimumSize: Size(double.infinity, 50),
+                minimumSize: const Size(double.infinity, 50),
                 foregroundColor: Colors.black,
                 backgroundColor: AppColor.yellow,
-                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
               ),
+              child: const Text('Save'),
             ),
           )
         ],

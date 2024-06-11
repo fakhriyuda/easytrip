@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:easytrip/theme/app_color.dart';
-import 'package:easytrip/view/auth/login/login_page.dart';
+import 'package:easytrip/screens/auth/login/login_page.dart';
+import 'package:easytrip/constants/color/app_color.dart';
 import 'package:flutter/material.dart';
 
 class OnBoardingPage extends StatefulWidget {
@@ -28,7 +28,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
     return Scaffold(body: Center(child: Builder(builder: (context) {
       final double height = MediaQuery.of(context).size.height;
       final double width = MediaQuery.of(context).size.width;
-      return Container(
+      return SizedBox(
         height: height,
         width: width,
         child: Stack(
@@ -82,7 +82,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
   }
 
   onboard1() {
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       child: Stack(
@@ -123,7 +123,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                       ?.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 56),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
@@ -148,7 +148,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
   }
 
   onboard2() {
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       child: Stack(
@@ -189,7 +189,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                       ?.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 56),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
@@ -214,7 +214,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
   }
 
   onboard3() {
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       child: Stack(
@@ -255,7 +255,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                       ?.copyWith(color: Colors.white),
                 ),
                 const SizedBox(height: 56),
-                Container(
+                SizedBox(
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
